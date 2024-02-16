@@ -19,6 +19,11 @@ namespace Console_RPG
             derek.UseItem(potion1, dragon1);
 
             derek.UseItem(Boom1, goblin1);
+
+            Location sandTown = new Location("Sand Town", "A hub for traders and travelers in the dry desert.");
+            Location desertCastle = new Location("Desert Castle", "A seat of power and order.");  //extrapilate
+            Location oasis = new Location("The Oasis", "Its glisening waters are the perfect resting spot for weary travelers.");
+            Location dinasourGraveyard = new Location("Dinasour Graveyard", "There's an ominous feel about the place.");
         }
     }
 }

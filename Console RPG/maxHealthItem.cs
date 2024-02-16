@@ -14,7 +14,7 @@ namespace Console_RPG
         public override void Use(Entity user, Entity target)
         {
             target.currentHP += this.upMaxHealth;
-            Console.WriteLine(target.name + "Healed by ()");
+            Console.WriteLine(target.name + "health increased by " + upMaxHealth);
         }
     }
       
