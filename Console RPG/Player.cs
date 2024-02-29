@@ -73,7 +73,7 @@ namespace Console_RPG
                 Item item = ChooseItem(inventory);
                 Entity target = ChooseTarget(enemies.Cast<Entity>().ToList());
 
-                Item.Use(this, target);
+                item.Use(this, target);
                 inventory.Remove(item);
             }
         }
