@@ -6,7 +6,7 @@ namespace Console_RPG
     abstract class Item
     {
 
-        HealthPotionItem potion1 = new HealthPotionItem("Potion I", "It'll quench ya", 20, 10, 10);
+        public static HealthPotionItem potion1 = new HealthPotionItem("Potion I", "It'll quench ya", 20, 10, 10);
         ShootingBigBoomStickItem Boom1 = new ShootingBigBoomStickItem("Boonka", "Handle carefully", 50, 30, 35, 60, 10);
 
         public string name;

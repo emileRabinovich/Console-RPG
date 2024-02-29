@@ -15,6 +15,19 @@ namespace Console_RPG
 
             Console.WriteLine($"there are {numberOfWizards}");
 
+            //this would add a health potion to my inventory 
+            Player.inventory.Add(HealthPotionItem.potion1);
+
+            // this would remove a health potion from my inventory 
+            Player.inventory.Remove(HealthPotionItem.potion1);
+
+            //this would print the name of the first item in my inventory 
+            Console.WriteLine(Player.inventory[0].name);
+
+            // this would remove the first item in my inventory 
+            Player.inventory.Clear();
+
+            Player.inventory.RemoveAt(0);
         }
     }
 }

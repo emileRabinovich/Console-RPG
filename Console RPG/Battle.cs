@@ -21,16 +21,22 @@ namespace Console_RPG
             while (true)
             {
                 // loop through all the players 
-                foreach (var item in players)
+                foreach (var player in players)
                 {
-                    Console.WriteLine("It is " + item.name + "'s turn.");
-                    item.DoTurn(players, enemies);
+                    if (player.currentHP > 0)
+                    {
+                        Console.WriteLine("It is " + player.name + "'s turn.");
+                        player.DoTurn(players, enemies);
+                    }
                 }
 
-                foreach (var item in enemies)
+                foreach (var enemy in enemies)
                 {
-                    Console.WriteLine("It is " + item.name + "'s turn.");
-                    item.DoTurn(players, enemies);
+                    if (enemy.currentHP > 0)
+                    {
+                        Console.WriteLine("It is " + enemy.name + "'s turn.");
+                        enemy.DoTurn(players, enemies);
+                    }
                 }
 
 
