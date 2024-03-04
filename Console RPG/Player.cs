@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 
 namespace Console_RPG
 {
@@ -11,6 +12,7 @@ namespace Console_RPG
         {
             HealthPotionItem.potion1
         };
+        public static int CoinCount = 0;
 
         public static Player derek = new Player("Derek", 85, 1, new Stats(attack: 1, defense: 1, magicAtk: 1, magicDef: 1));
         public static Player player1 = new Player("Sindbad", 85, 1, new Stats(attack: 1, defense: 1, magicAtk: 1, magicDef: 1));

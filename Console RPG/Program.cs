@@ -7,7 +7,7 @@ namespace Console_RPG
     {
         static void Main(string[] args)
         {
-            Location.dinasourGraveyard.Resolve(new List<Player>() { Player.derek });                                            
+            Location.sandTown.Resolve(new List<Player>() { Player.derek });                                            
             
             Location.dinasourGraveyard.SetNearbyLocations(east: Location.oasis);
 

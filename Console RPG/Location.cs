@@ -8,22 +8,22 @@ namespace Console_RPG
 {
     class Location
     {
-        public static Location sandTown = new Location("Sand Town", "A hub for traders and travelers in the dry desert.");
+        public static Location sandTown = new Location("Sand Town", "A hub for traders and travelers in the dry desert.", new Shop("The Dancing Fish", new List<Item>() { Item.potion1, Item.Boom1 }));
         public static Location desertCastle = new Location("Desert Castle", "Be aware of the power that lays behind these walls.");  
         public static Location oasis = new Location("The Oasis", "Its glisening waters are the perfect resting spot for weary travelers.");
         public static Location dinasourGraveyard = new Location("Dinasour Graveyard", "There's an ominous feel about the place.", new Battle(new List<Enemy>() { Enemy.goblin1, Enemy.goblin2, Enemy.dragon1 }));
 
         public string name;
         public string description;
-        public Battle battle;
+        public LocationFeature feature;
 
         public Location north, east, south, west;
 
-        public Location(string name, string description, Battle battle = null)
+        public Location(string name, string description, LocationFeature feature = null)
         {
             this.name = name;
             this.description = description;
-            this.battle = battle;
+            this.feature = feature;
         }
 
         public void SetNearbyLocations(Location north = null, Location east = null, Location south = null, Location west = null)
@@ -61,7 +61,7 @@ namespace Console_RPG
             Console.WriteLine(this.description);
 
             // Null checking to make sure there is a battle to resolve.
-            battle?.Resolve(players);
+            feature?.Resolve(players);
 
             Location nextLocation = null;
 
