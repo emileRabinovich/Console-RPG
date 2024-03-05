@@ -19,6 +19,8 @@ namespace Console_RPG
         public static Player player2 = new Player("Herculese", 90, 1, new Stats(attack: 1, defense: 1, magicAtk: 1, magicDef: 1));
         public static Player player3 = new Player("Kethra", 70, 1, new Stats(attack: 1, defense: 1, magicAtk: 1, magicDef: 1));
 
+        public Armor headgear, chestpiece, legwear; 
+        public Weapon Weapon;
         //calling base constructor!
         public Player(string name, int hp, int mana, Stats stats) : base(name,hp,mana,stats) { }
 
