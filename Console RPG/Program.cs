@@ -7,6 +7,13 @@ namespace Console_RPG
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello, welcome to Sand Town.");
+            Console.WriteLine("Who Would you like to play as?");
+            Console.WriteLine("Sinbad | Hercules | Kethra | Iris");
+            string playerName = Console.ReadLine();
+
+
+
             Location.sandTown.Resolve(new List<Player>() { Player.derek });                                            
             
             Location.dinasourGraveyard.SetNearbyLocations(east: Location.oasis);

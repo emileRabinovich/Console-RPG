@@ -14,7 +14,7 @@ namespace Console_RPG
         };
         public static int CoinCount = 0;
 
-        public static Player derek = new Player("Derek", 85, 1, new Stats(attack: 1, defense: 1, magicAtk: 1, magicDef: 1));
+        public static Player derek = new Player($"Iris", 85, 1, new Stats(attack: 1, defense: 1, magicAtk: 1, magicDef: 1));
         public static Player player1 = new Player("Sindbad", 85, 1, new Stats(attack: 1, defense: 1, magicAtk: 1, magicDef: 1));
         public static Player player2 = new Player("Herculese", 90, 1, new Stats(attack: 1, defense: 1, magicAtk: 1, magicDef: 1));
         public static Player player3 = new Player("Kethra", 70, 1, new Stats(attack: 1, defense: 1, magicAtk: 1, magicDef: 1));
