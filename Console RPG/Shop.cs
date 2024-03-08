@@ -11,7 +11,7 @@ namespace Console_RPG
 
         public Shop(string shopName, List<Item> items) : base(false)
         {
-            
+
             this.shopName = shopName;
             this.items = items;
         }
@@ -50,17 +50,17 @@ namespace Console_RPG
                 }
                 else if (userchoice == "LEAVE")
                 {
-                    break; 
+                    break;
                 }
             }
 
             Console.WriteLine("Good riddance");
-         
+
         }
 
         public Item ChooseItem(List<Item> choices)
         {
-           
+
 
             // Print out all the names of the people we can choose from. 
             for (int i = 0; i < choices.Count; i++)

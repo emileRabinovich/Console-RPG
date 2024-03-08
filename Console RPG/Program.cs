@@ -18,10 +18,6 @@ namespace Console_RPG
             
             Location.dinasourGraveyard.SetNearbyLocations(east: Location.oasis);
 
-            int numberOfWizards = 24;
-
-            Console.WriteLine($"there are {numberOfWizards}");
-
             //this would add a health potion to my inventory 
             Player.inventory.Add(HealthPotionItem.potion1);
 

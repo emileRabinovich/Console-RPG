@@ -14,10 +14,10 @@ namespace Console_RPG
         };
         public static int CoinCount = 0;
 
-        public static Player derek = new Player($"Iris", 85, 1, new Stats(attack: 1, defense: 1, magicAtk: 1, magicDef: 1));
-        public static Player player1 = new Player("Sindbad", 85, 1, new Stats(attack: 1, defense: 1, magicAtk: 1, magicDef: 1));
-        public static Player player2 = new Player("Herculese", 90, 1, new Stats(attack: 1, defense: 1, magicAtk: 1, magicDef: 1));
-        public static Player player3 = new Player("Kethra", 70, 1, new Stats(attack: 1, defense: 1, magicAtk: 1, magicDef: 1));
+        public static Player derek = new Player($"Iris", 75, 35, new Stats(attack: 10, defense: 10, magicAtk: 30, magicDef: 20));
+        public static Player player1 = new Player("Sindbad", 85, 1, new Stats(attack: 50, defense: 40, magicAtk: 1, magicDef: 1));
+        public static Player player2 = new Player("Herculese", 90, 1, new Stats(attack: 40, defense: 50, magicAtk: 1, magicDef: 1));
+        public static Player player3 = new Player("Kethra", 70, 40, new Stats(attack: 9, defense: 15, magicAtk: 35, magicDef: 20));
 
         public Armor headgear, chestpiece, legwear; 
         public Weapon Weapon;
